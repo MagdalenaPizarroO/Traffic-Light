@@ -11,13 +11,22 @@ const Home = () => {
 		<div >
 			<div id="trafficTop"></div>
 			<div id="container">
-				<div className={`redLight ${selectedLight === "red"? "selected":""}`}
-				onClick={()=> handleLightClick("red")}>
-				</div>
-				<div className={`yellowLight ${selectedLight === "red"? "selected":""}`}
-				onClick={()=> handleLightClick("red")}>
-				</div>
-				<div className="greenLight"></div>
+			<div
+          className={`redLight ${selectedLight === "red" ? "selected" : ""}`}
+          onClick={() => handleLightClick("red")}
+        ></div>
+        <div
+          className={`yellowLight ${
+            selectedLight === "yellow" ? "selected" : ""
+          }`}
+          onClick={() => handleLightClick("yellow")}
+        ></div>
+        <div
+          className={`greenLight ${
+            selectedLight === "green" ? "selected" : ""
+          }`}
+          onClick={() => handleLightClick("green")}
+        ></div>
 			</div>
 			
 		</div>
